@@ -40,9 +40,13 @@ with open(output_file,"w", newline="") as datafile:
 
     
     datafile.write(f'[Election Results]\n')
+    print ((f'[Election Results]')
     datafile.write(f'[-----------------]\n')
+    print(f'[-----------------]')
     datafile.write(f'[Total Votes]: {str(votes)}\n')
+    print(f'[Total Votes]: {str(votes)}')
     datafile.write(f'[-----------------]\n')
+    print(f'[-----------------]')
     for candidate in CandidateList:
         if CandidateList[candidate] > winningcounts:
             winningcounts =  CandidateList[candidate]
@@ -52,5 +56,8 @@ with open(output_file,"w", newline="") as datafile:
         datafile.write(f' {Candidate_results}\n')
 
     datafile.write(f'[-----------------]\n')
+    print(f'[-----------------]')
     datafile.write(f'[Winner: {winner} ]\n')
+    print(f'[Winner: {winner} ]')
     datafile.write(f'[-----------------]\n')
+    print(f'[-----------------]')

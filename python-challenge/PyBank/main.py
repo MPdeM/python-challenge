@@ -40,13 +40,13 @@ with open (Bank_csv, newline="") as csvfile:
         dftotal= dftotal+ df
     AverageChange = round(dftotal/ (totalmonths-1),2)
     
-#    print(['Finantial Analysis'])
-#    print(['-----------------'])
-#    print(f'Total Months: {str(totalmonths)}' )
-#    print(f'[Total]:  $ {Total}')
-#    print(f'[Average Change] : $ {AverageChange}')
-#    print(f'[Greatest Increase in Profits] : {greatestINC_DATE} ($ {greatestincrease})')
-#    print(f'[Greatest Decrease in Profits] : {greatestINC_DATE} ($ {greatestdecrease})')  
+   print(['Finantial Analysis'])
+   print(['-----------------'])
+   print(f'Total Months: {str(totalmonths)}' )
+   print(f'[Total]:  $ {Total}')
+   print(f'[Average Change] : $ {AverageChange}')
+   print(f'[Greatest Increase in Profits] : {greatestINC_DATE} ($ {greatestincrease})')
+   print(f'[Greatest Decrease in Profits] : {greatestINC_DATE} ($ {greatestdecrease})')  
 
 output_file =  os.path.join("PyBankResults.txt")
 with open(output_file,"w", newline="") as datafile:
